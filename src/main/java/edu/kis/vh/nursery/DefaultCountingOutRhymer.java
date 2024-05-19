@@ -11,11 +11,7 @@ public class DefaultCountingOutRhymer {
         return total;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
-    private int total = -1;
+    private int total = EMPTY_INDEX;
 
     protected void countIn(int in) {
         if (!isFull())
